@@ -1,0 +1,35 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #797979;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(235, 238, 235, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1f1f1f;
+  }
+  
+  #match-info div {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    .match-block {
+        margin: 15px 0;
+        padding: 10px;
+        background-color: #2a2a2a;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(32, 209, 32, 0.822);
+      }
+      
+  }
+  
