@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function displayAllMatchData(data) {
     const matchInfoDiv = document.getElementById('match-info');
   
-    // Fixture and general information
     let content = `
       <h2>Fixture: ${data.fixture[0]} vs. ${data.fixture[1]}</h2>
       <p>Stadium: ${data.stadium}</p>
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <p>Yellow Cards per Game: ${data.referee.yellow_per_game}</p>
     `;
   
-    // Head-to-head information
     content += `<h3>Head-to-Head Matches</h3>`;
     Object.entries(data.head_to_head.teams).forEach(([match, teams]) => {
       const goals = data.head_to_head.goals[match];
@@ -40,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     });
   
-    // Insert the content into the div
     matchInfoDiv.innerHTML = content;
   }
   
